@@ -2,10 +2,7 @@
   "parser": "babel-eslint",
   "extends": [
     "standard",
-    "standard-react",
-    "plugin:prettier/recommended",
-    "prettier/standard",
-    "prettier/react"
+    "standard-react"
   ],
   "env": {
     "node": true
@@ -23,11 +20,132 @@
     }
   },
   "rules": {
-    "space-before-function-paren": 0,
     "react/prop-types": 0,
     "react/jsx-handler-names": 0,
     "react/jsx-fragments": 0,
     "react/no-unused-prop-types": 0,
-    "import/export": 0
-  }
+    "import/export": 0,
+    "max-line-length": {
+        "options": [
+            120
+        ]
+    },
+    "no-bitwise": 1,
+    "no-conditional-assignment": true,
+    "no-console": 1,
+    "no-namespace": false,
+    "arrow-parens": [
+        true,
+        "ban-single-arg-parens"
+    ],
+    "interface-name": false,
+    "prefer-for-of": false,
+    "arrow-return-shorthand": true,
+    "ban": [
+        true,
+        [
+            "_",
+            "assign"
+        ],
+        [
+            "_",
+            "concat"
+        ],
+        [
+            "_",
+            "extend"
+        ]
+    ],
+    "class-name": true,
+    "curly": 1,
+    "eofline": true,
+    "import-spacing": true,
+    "label-position": true,
+    "new-parens": 1,
+    "no-angle-bracket-type-assertion": true,
+    "no-arg": true,
+    "no-consecutive-blank-lines": true,
+    "no-construct": true,
+    "no-debugger": 1,
+    "no-duplicate-variable": true,
+    "no-empty": 1,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-initializer": true,
+    "no-unsafe-finally": true,
+    "no-unused-expression": true,
+    "no-var-keyword": true,
+    "one-line": [
+        true,
+        "check-open-brace",
+        "check-catch",
+        "check-else",
+        "check-whitespace"
+    ],
+    "prefer-const": 1,
+    "semicolon": [
+        true,
+        "always"
+    ],
+    "space-before-function-paren": [
+        true,
+        {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always",
+            "method": "never",
+            "constructor": "never"
+        }
+    ],
+    "space-within-parens": false,
+    "triple-equals": [
+        true,
+        "allow-null-check"
+    ],
+    "typedef-whitespace": [
+        true,
+        {
+            "call-signature": "nospace",
+            "index-signature": "nospace",
+            "parameter": "nospace",
+            "property-declaration": "nospace",
+            "variable-declaration": "nospace"
+        },
+        {
+            "call-signature": "onespace",
+            "index-signature": "onespace",
+            "parameter": "onespace",
+            "property-declaration": "onespace",
+            "variable-declaration": "onespace"
+        }
+    ],
+    "variable-name": [
+        true,
+        "allow-pascal-case",
+        "allow-snake-case",
+        "ban-keywords",
+        "check-format"
+    ],
+    "whitespace": [
+        true,
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-module",
+        "check-preblock",
+        "check-rest-spread",
+        "check-separator",
+        "check-type",
+        "check-type-operator",
+        "check-typecast"
+    ],
+    "object-curly-spacing": [
+        true,
+        "always"
+    ],
+    "no-unnecessary-semicolons": false,
+    "no-eval": 1,
+    "quotemark": [true, "double"],
+    "ter-indent": [true, 4]
+  },
+  "defaultSeverity": "warning"
 }
